@@ -1,3 +1,4 @@
+#hOLA
 def avarage(calific, mat):
 
     prom = sum(calific) / mat
