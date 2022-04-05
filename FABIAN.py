@@ -10,9 +10,9 @@ def validation(calific):
     for cali in calific:
         if cali < 0 or cali > 10:
             new_calific = new_calific + [float(input(f"{cali} not is a a valid calification. Please enter a valid calification: "))]
-    else:
-        new_calific = new_calific + [calific[cont]]
-        cont = cont + 1
+        else:
+            new_calific = new_calific + [calific[cont]]
+            cont = cont + 1
     return new_calific
 
 if __name__ == '__main__':
@@ -20,7 +20,7 @@ if __name__ == '__main__':
         try:
             mat = int(input("Enter the number of the assignments: "))
             break
-        except:
+        except ValueError:
             print("Please enter a valid number as an integer, not a float or a string")
 
     while True:
